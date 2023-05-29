@@ -1,6 +1,8 @@
 # Project - Android Gallery App
 Đồ án thực hành nhóm 7 môn lập trình mobile 20_3 HCMUS
 
+Ứng dụng thư viện này giúp bạn quản lý và xem ảnh của mình bằng giao diện người dùng đơn giản. Đơn giản nhưng mạnh mẽ cùng một lúc.
+
 **Clone project này trước khi bắt tay vào code**
 
 ## Table of Contents
