@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:requestLegacyExternalStorage="true"
+    android:usesCleartextTraffic="true">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+
+    <uses-feature android:name="android.hardware.camera" />
+
+
+
+    <application
+        android:requestLegacyExternalStorage="true"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication"
+        tools:targetApi="31">
+        <activity
+            android:requestLegacyExternalStorage="true"
+            android:name=".AllAlbumLayout"
+            android:exported="false">
+            <meta-data
+                android:requestLegacyExternalStorage="true"
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:requestLegacyExternalStorage="true"
+            android:name=".ItemAlbumActivity"
+            android:exported="false">
+            <meta-data
+                android:requestLegacyExternalStorage="true"
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+
+        <activity
+            android:requestLegacyExternalStorage="true"
+            android:name=".SpecificAlbumLayout"
+            android:exported="false">
+            <meta-data
+                android:requestLegacyExternalStorage="true"
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:requestLegacyExternalStorage="true"
+            android:name=".CreateAlbumActivity"
+            android:exported="false">
+            <meta-data
+                android:requestLegacyExternalStorage="true"
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:requestLegacyExternalStorage="true"
+            android:name=".MultiSelectImage"
+            android:exported="false">
+            <meta-data
+                android:requestLegacyExternalStorage="true"
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+
+        <activity
+            android:requestLegacyExternalStorage="true"
+            android:name=".FooterLayout"
+            android:exported="false">
+            <meta-data
+                android:requestLegacyExternalStorage="true"
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+
+        <activity
+            android:requestLegacyExternalStorage="true"
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action
+                    android:requestLegacyExternalStorage="true"
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:requestLegacyExternalStorage="true"
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity android:requestLegacyExternalStorage="true"
+            android:name=".SlideShow"
+            android:exported="false" />
+        <activity
+            android:requestLegacyExternalStorage="true"
+            android:name=".PhotoActivity"
+            android:exported="false" />
+        <activity
+            android:requestLegacyExternalStorage="true"
+            android:name=".EditPhoto"
+            android:exported="false" />
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            >
+            <!-- ressource file to create -->
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths">
+            </meta-data>
+        </provider>
+    </application>
+
+</manifest>

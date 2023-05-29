@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:paddingTop="30dp"
+    android:orientation="vertical"
+    android:background="@drawable/custom_dialog_newalbum">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New album"
+        android:gravity="center"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Input the album name."
+        android:textSize="18sp"
+        android:textColor="@color/black"/>
+    <EditText
+        android:id="@+id/AlbumName"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Title"
+        android:textSize="22sp"
+        android:layout_margin="15dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:background="@drawable/custom_input_newalbum"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_cancel_dialog"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Cancle"
+            android:textAllCaps="false"
+            android:background="@drawable/custom_button_cancle_newalbum"
+            android:textSize="18sp"
+            android:textColor="@color/blue"/>
+        <Button
+            android:id="@+id/btn_save_dialog"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Save"
+            android:textAllCaps="false"
+            android:background="@drawable/custom_button_save_newalbum"
+            android:textSize="18sp"
+            android:textColor="@color/blue"/>
+    </LinearLayout>
+</LinearLayout>

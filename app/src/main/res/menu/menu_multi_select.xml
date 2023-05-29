@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/menuCreateAlbum"
+        android:title="Create new albums"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/menuAddAlbum"
+        android:title="add to Album"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/menuSlideshow"
+        android:title="slideshow"
+        app:showAsAction="never"/></menu>

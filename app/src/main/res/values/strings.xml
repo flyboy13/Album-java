@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Simple Gallery</string>
+    <string name="album">Album</string>
+    <string name="my_album">My Album</string>
+    <string name="see_all">See all</string>
+
+</resources>
